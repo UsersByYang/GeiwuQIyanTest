@@ -6,12 +6,12 @@ public class move : MonoBehaviour
 {
     public float speed = 10;
     private Animator myAnimation;
-    private Rigidbody2D playerRigidbody;
+    private Rigidbody playerRigidbody;
     // Start is called before the first frame update
     void Start()
     {
         myAnimation = GetComponent<Animator>();
-        playerRigidbody = GetComponent<Rigidbody2D>();
+        playerRigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -24,16 +24,19 @@ public class move : MonoBehaviour
     void IsWalk()
     {
         float moveX = Input.GetAxis("Horizontal");
-        Vector2 playerDrection = new Vector2(moveX * speed, playerRigidbody.velocity.y);
+        float moveZ = Input.GetAxis("Vertical");
+        Vector3 playerDrection = new Vector3(moveX * speed, playerRigidbody.velocity.y,moveZ*speed);
         playerRigidbody.velocity = playerDrection;
-
-
-
-
         bool Judgement = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
+        bool Judgement2 = Mathf.Abs(playerRigidbody.velocity.z) > Mathf.Epsilon && playerRigidbody.velocity.z >0;
+        bool Judgement3 = Mathf.Abs(playerRigidbody.velocity.z) > Mathf.Epsilon&&playerRigidbody.velocity.z<0;
         myAnimation.SetBool("right", Judgement);
-
+      
+        myAnimation.SetBool("back", Judgement2);
+        
+        myAnimation.SetBool("front", Judgement3);
     }
+    //·´×ª
     void flip()
     {
         bool Judgement = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
