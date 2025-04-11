@@ -8,6 +8,8 @@ public class move : MonoBehaviour
     public float speed = 10;
     private Animator myAnimation;
     private Rigidbody playerRigidbody;
+    public GameObject myBag;
+    bool isOpen;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class move : MonoBehaviour
     {
         IsWalk();
         flip();
+        OpenMyBag();
     }
     void IsWalk()
     {
@@ -58,6 +61,15 @@ public class move : MonoBehaviour
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             if (playerRigidbody.velocity.x < -0.1f)
                 transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+
+    void OpenMyBag()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            isOpen = !isOpen;
+            myBag.SetActive(isOpen);
         }
     }
 }
