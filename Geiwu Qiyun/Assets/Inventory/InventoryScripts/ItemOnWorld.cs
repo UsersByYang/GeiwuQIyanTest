@@ -18,13 +18,15 @@ public class Item1 : MonoBehaviour
 
     public void AddNewItem()
     {
-        if (playerInventory.itemList.Contains(thisItem))
+        if (!playerInventory.itemList.Contains(thisItem))
         {
             playerInventory.itemList.Add(thisItem);
+            //InventoryManager.CreatNewItem(thisItem);
         }
         else
         {
             thisItem.itemHeld += 1;
         }
+        InventoryManager.RefreshItem();
     }
 }
