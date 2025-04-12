@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 1659930773}
   - component: {fileID: 1659930772}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_bagSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1474,7 +1474,7 @@ RectTransform:
   m_GameObject: {fileID: 1679914358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.7321, y: 2.7321, z: 2.7321}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1005681850}
@@ -1483,7 +1483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 338.78137, y: 176.59729}
+  m_AnchoredPosition: {x: 534, y: 272}
   m_SizeDelta: {x: 54.5152, y: 44.0273}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679914360

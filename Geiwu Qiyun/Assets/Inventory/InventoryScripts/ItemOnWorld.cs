@@ -9,7 +9,7 @@ public class Item1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             AddNewItem();
             Destroy(gameObject);
