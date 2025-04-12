@@ -1,6 +1,6 @@
 // Unity built-in shader source. Copyright (c) 2016 Unity Technologies. MIT license (see license.txt)
-
-Shader "Sprites/Custom/SpriteShadow"
+//***——为修改的地方
+Shader "Sprites/Custom/SpriteShadows"//***
 {
     Properties
     {
@@ -11,7 +11,7 @@ Shader "Sprites/Custom/SpriteShadow"
         [HideInInspector] _Flip("Flip", Vector) = (1,1,1,1)
         [PerRendererData] _AlphaTex("External Alpha", 2D) = "white" {}
         [PerRendererData] _EnableExternalAlpha("Enable External Alpha", Float) = 0
-            _Cutoff("Alpha CutOff",Range(0,1)) = 0.5
+            _Cutoff("Alpha Cutoff",Range(0,1)) = 0.5//***
     }
 
         SubShader
