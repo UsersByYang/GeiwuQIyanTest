@@ -14,9 +14,10 @@ public class DialogueManager : MonoBehaviour
     private int currentDialogueIndex = 0;
     private int currentLineIndex = 0;
     public bool isDialogueActive = false;
-    private move playerMovement;//对话时禁用方向建
+    private move playerMovement; // 对话时禁用方向键
     public GameObject dialogueBox;
-
+    public float typingSpeed = 0.05f; // 每个字符显示的间隔时间
+    private Coroutine typingCoroutine;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.LogError("PlayerMovement script not found.");
         }
-        if (dialogueBox != null)//开始隐藏对话框
+        if (dialogueBox != null) // 开始隐藏对话框
         {
             dialogueBox.SetActive(false);
         }
@@ -33,10 +34,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        if (dialogues.Length > 0)//有对话，则激活对话框
+        if (dialogues.Length > 0) // 有对话，则激活对话框
         {
             isDialogueActive = true;
-            if (playerMovement != null)//激活后金庸人物移动
+            if (playerMovement != null) // 激活后禁用人物移动
             {
                 playerMovement.enabled = false;
             }
@@ -52,10 +53,14 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentLineIndex < dialogues[currentDialogueIndex].lines.Length)
         {
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
             DialogueLine currentLine = dialogues[currentDialogueIndex].lines[currentLineIndex];
             nameText.text = currentLine.characterName;
-            dialogueText.text = currentLine.dialogueText;
             characterSpriteImage.sprite = currentLine.characterSprite;
+            typingCoroutine = StartCoroutine(TypeDialogue(currentLine.dialogueText));
             currentLineIndex++;
         }
         else
@@ -64,16 +69,26 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private IEnumerator TypeDialogue(string line)
+    {
+        dialogueText.text = "";
+        foreach (char c in line.ToCharArray())
+        {
+            dialogueText.text += c;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+    }
+
     private void EndDialogue()
     {
         isDialogueActive = false;
         if (playerMovement != null)
         {
-            playerMovement.enabled = true;//对话结束，激活人物移动
+            playerMovement.enabled = true; // 对话结束，激活人物移动
         }
         if (dialogueBox != null)
         {
-            dialogueBox.SetActive(false);//关闭对话框
+            dialogueBox.SetActive(false); // 关闭对话框
         }
     }
 
@@ -85,3 +100,4 @@ public class DialogueManager : MonoBehaviour
         }
     }
 }
+
