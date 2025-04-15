@@ -4,7 +4,8 @@ using System.Collections;
 
 public class FadeInEffect : MonoBehaviour
 {
-    public Image fadeImage; // 公有图像变量，在编辑器中赋值
+    //这个用于场景开始
+    public Image fadeImage; // 黑色图像
     public float fadeDuration = 2f; // 淡入持续时间
     private Color startColor;
     private Color endColor = Color.clear;
