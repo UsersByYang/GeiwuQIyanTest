@@ -7,7 +7,7 @@ using System.Collections;
 public class move : MonoBehaviour
 {
     private Animator playerAnimation;
-    private Animator stoneAnimation;
+    //private Animator stoneAnimation;
     private Rigidbody playerRigidbody;
 
     //用于角色移动
@@ -20,15 +20,15 @@ public class move : MonoBehaviour
 
     //用于推石头和石头滚动动画
     //角色接触石头且按住方向键播放推石头动画，大于某个时间后石头移动，停止推石头动画，播放石头滚动动画
-    public GameObject Stone;
+   /* public GameObject Stone;
     private bool isPushing = false;
     private float pushStartTime;
-    public float pushDuration = 3;
+    public float pushDuration = 3;*/
     // Start is called before the first frame update
     void Start()
     {
         playerAnimation = GetComponent<Animator>();
-        stoneAnimation = GetComponent<Animator>();
+        //stoneAnimation = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
     }
 
@@ -89,7 +89,7 @@ public class move : MonoBehaviour
             myBag.SetActive(isOpen);
         }
     }
-    void PushStone()
+   /* void PushStone()
     {
         if (isPushing)
         {
@@ -123,16 +123,16 @@ public class move : MonoBehaviour
                 playerAnimation.SetBool("IsPushing", false);
             }
         }
-    }
+    }*/
     //检测石头
-    void OnTriggerEnter(Collider other)
+   /* void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == Stone)
         {
             isPushing = true;
             pushStartTime = Time.time;
         }
-    }
+    }*/
 }
     
 

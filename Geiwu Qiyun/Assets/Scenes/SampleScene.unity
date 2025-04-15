@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 87a7951e1c490e64aa13ad023d55516a, type: 2}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -604,7 +604,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -910,6 +910,7 @@ MonoBehaviour:
   isDialogueActive: 0
   dialogueBox: {fileID: 2057852919}
   typingSpeed: 0.05
+  newSkyboxMaterial: {fileID: 2100000, guid: 87a7951e1c490e64aa13ad023d55516a, type: 2}
 --- !u!4 &670698899
 Transform:
   m_ObjectHideFlags: 0
@@ -1101,7 +1102,7 @@ Transform:
   m_GameObject: {fileID: 924342825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -118.9, y: -2.16, z: 0}
+  m_LocalPosition: {x: -123.13, y: -2.16, z: 6.42}
   m_LocalScale: {x: 0.062159404, y: 0.062159404, z: 0.062159404}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1121,8 +1122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   myBag: {fileID: 593611328}
-  Stone: {fileID: 1037366778}
-  pushDuration: 3
 --- !u!95 &924342830
 Animator:
   serializedVersion: 5
@@ -1446,7 +1445,8 @@ GameObject:
   - component: {fileID: 1037366780}
   - component: {fileID: 1037366779}
   - component: {fileID: 1037366783}
-  - component: {fileID: 1037366782}
+  - component: {fileID: 1037366784}
+  - component: {fileID: 1037366785}
   m_Layer: 0
   m_Name: "\u77F3\u5934_0"
   m_TagString: Untagged
@@ -1536,33 +1536,12 @@ Transform:
   m_GameObject: {fileID: 1037366778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.01243, y: -2.13, z: -36.412838}
+  m_LocalPosition: {x: -112.4, y: -2.13, z: 6.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1037366782
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037366778}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.246262, y: 11.359193, z: 3.4970322}
-  m_Center: {x: 1.1893692, y: 1.5098681, z: 1.4022484}
 --- !u!54 &1037366783
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1572,7 +1551,7 @@ Rigidbody:
   m_GameObject: {fileID: 1037366778}
   serializedVersion: 4
   m_Mass: 10
-  m_Drag: 0
+  m_Drag: 6
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1590,6 +1569,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!136 &1037366784
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037366778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.1641388
+  m_Height: 6.3282776
+  m_Direction: 1
+  m_Center: {x: -0.14121246, y: -0.8755436, z: 0}
+--- !u!114 &1037366785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037366778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684f6db1c8c478843bd77bb524a08805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushForceThreshold: 5
 --- !u!1 &1061394401
 GameObject:
   m_ObjectHideFlags: 0
