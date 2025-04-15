@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Animations;
 
 public class FadeInEffect : MonoBehaviour
 {
@@ -10,8 +11,13 @@ public class FadeInEffect : MonoBehaviour
     private Color startColor;
     private Color endColor = Color.clear;
 
+    // 新增：动画所在的游戏对象
+    //public GameObject animatedObject;
+    //private Animator animator;
+
     void Start()
     {
+       
         startColor = fadeImage.color;
         StartCoroutine(FadeIn());
     }
@@ -26,7 +32,11 @@ public class FadeInEffect : MonoBehaviour
             yield return null;
         }
         fadeImage.color = endColor;
-       
-         Destroy(fadeImage.gameObject);
+
+        Destroy(fadeImage.gameObject);
+
+        // 淡入完成后播放动画
+        //animator.enabled = true;
+        //animator.Play("开场动画");
     }
 }
