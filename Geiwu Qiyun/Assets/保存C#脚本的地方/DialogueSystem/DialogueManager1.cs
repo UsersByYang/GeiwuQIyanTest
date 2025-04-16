@@ -21,6 +21,12 @@ public class DialogueManager1 : MonoBehaviour
 
     private void Start()
     {
+        
+        StartCoroutine(DelatedStart());
+    }
+    IEnumerator DelatedStart()
+    {
+        yield return new WaitForSeconds(5);
         playerMovement = FindObjectOfType<move>();
         if (playerMovement == null)
         {
@@ -33,6 +39,7 @@ public class DialogueManager1 : MonoBehaviour
 
         // 自动开始对话
         StartDialogue();
+
     }
 
     public void StartDialogue()
