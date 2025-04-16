@@ -3,7 +3,13 @@ guid: 8d839368d43456548b08e0909a2f807e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - nameText: {instanceID: 0}
+  - dialogueText: {instanceID: 0}
+  - characterSpriteImage: {instanceID: 0}
+  - dialogueBox: {instanceID: 0}
+  - newSkyboxMaterial: {instanceID: 0}
+  - directionalLight: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

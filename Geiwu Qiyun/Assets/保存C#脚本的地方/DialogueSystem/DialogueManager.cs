@@ -23,6 +23,9 @@ public class DialogueManager : MonoBehaviour
     // 要切换到的天空盒材质
     public Material newSkyboxMaterial;
 
+    // 用于引用场景中的Directional Light
+    public Light directionalLight;
+
     private void Start()
     {
         playerMovement = FindObjectOfType<move>();
@@ -33,6 +36,11 @@ public class DialogueManager : MonoBehaviour
         if (dialogueBox != null) // 开始隐藏对话框
         {
             dialogueBox.SetActive(false);
+        }
+
+        if (directionalLight != null)
+        {
+            directionalLight.gameObject.SetActive(false);
         }
     }
 
@@ -95,8 +103,14 @@ public class DialogueManager : MonoBehaviour
             dialogueBox.SetActive(false); // 关闭对话框
         }
 
+        // 打开Directional Light
+        if (directionalLight != null)
+        {
+            directionalLight.gameObject.SetActive(true);
+        }
+
         // 延迟3秒调用ChangeSkybox方法
-        Invoke("ChangeSkybox", 3f);
+        Invoke("ChangeSkybox", 1f);
     }
 
     private void ChangeSkybox()
