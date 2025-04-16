@@ -4113,7 +4113,7 @@ PrefabInstance:
       addedObject: {fileID: 2096720245}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fcd5dd709fefcc242b77e13df680dda3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2096720247}
+      addedObject: {fileID: 2096720249}
   m_SourcePrefab: {fileID: 100100000, guid: fcd5dd709fefcc242b77e13df680dda3, type: 3}
 --- !u!1 &1960272718
 GameObject:
@@ -4236,7 +4236,8 @@ Transform:
   m_LocalPosition: {x: -120.151215, y: -5.162636, z: 0.20714392}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2057852923}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2054201997
@@ -4397,18 +4398,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057852919}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.20714392}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1253600209}
   - {fileID: 1386919612}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1960272720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 120.151215, y: 5.162636}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &2096720242 stripped
@@ -4458,13 +4459,13 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 107.841034, y: 54.47279, z: 94.62832}
   m_Center: {x: 53.27007, y: 44.37867, z: -50.611126}
---- !u!114 &2096720247
+--- !u!114 &2096720249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4476,11 +4477,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1300680c4468bac43a98b36d2fa3df54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useClick: 1
-  useCollision: 0
-  goToNextScene: 0
+  useClick: 0
+  useCollision: 1
+  goToNextScene: 1
   nextSceneName: WuZhiScence
-  popup: {fileID: 2096720242}
+  popup: {fileID: 0}
 --- !u!1 &2135941524
 GameObject:
   m_ObjectHideFlags: 0
@@ -4691,7 +4692,6 @@ SceneRoots:
   - {fileID: 1468522084}
   - {fileID: 670698899}
   - {fileID: 1960272720}
-  - {fileID: 2057852923}
   - {fileID: 237161862}
   - {fileID: 1854485272}
   - {fileID: 1208790263}
