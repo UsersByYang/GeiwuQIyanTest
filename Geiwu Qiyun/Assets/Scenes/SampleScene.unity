@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4579819707db2c34d9660b4847f339c9, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c5a1abbec40af434f9ed8e6777bee009, type: 3}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1504,6 +1504,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818113226}
   m_CullTransparentMesh: 1
+--- !u!1 &917074947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5583294306053005656, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
+  m_PrefabInstance: {fileID: 1208790263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &917074951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917074947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1999997, y: 1.0999999, z: 0.0500001}
+  m_Center: {x: -0.59999937, y: 0.5500009, z: -0.025000101}
 --- !u!1 &924342825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,7 +2212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.324645
+      value: -57.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2224,26 +2250,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -16.603
       objectReference: {fileID: 0}
+    - target: {fileID: 417954680075800231, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22262639920f43d6be32430e4e58350d, type: 2}
     - target: {fileID: 919132149155446097, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
       propertyPath: m_Name
       value: "\u5E95\u5EA7"
       objectReference: {fileID: 0}
     - target: {fileID: 8180324259724858815, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00263
+      value: 0.00247
       objectReference: {fileID: 0}
     - target: {fileID: 8180324259724858815, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00226
+      value: -0.00171
       objectReference: {fileID: 0}
     - target: {fileID: 8180324259724858815, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00413
+      value: 0.00554
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -5583294306053005656, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917074951}
   m_SourcePrefab: {fileID: 100100000, guid: b7286915407c5ae40b6729f483fc4903, type: 3}
 --- !u!1 &1253600208
 GameObject:
