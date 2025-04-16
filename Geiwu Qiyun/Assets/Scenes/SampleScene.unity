@@ -1059,7 +1059,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 2057852919}
   typingSpeed: 0.05
   newSkyboxMaterial: {fileID: 2100000, guid: 87a7951e1c490e64aa13ad023d55516a, type: 2}
-  directionalLight: {fileID: 0}
+  directionalLight: {fileID: 705507994}
 --- !u!4 &670698899
 Transform:
   m_ObjectHideFlags: 0
