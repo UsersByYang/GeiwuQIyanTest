@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f07c3afc3ce832d4d914307692b99f2f
+guid: bac61a6916e2e304a99e236b7a25ea24
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: forest_BANBOO_BIHAND_0
+      name: "\u6885_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 400
+        x: 48
+        y: 109
+        width: 537
+        height: 588
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80257d3b535273d4a9e38e206850265d
-      internalID: -496081855
+      spriteID: faa610a6fc140d24b95c56cc074bba00
+      internalID: 2044975883
       vertices: []
       indices: 
       edges: []
@@ -133,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9e1bf73926a2e2045b1c6745f7376ef4
+    spriteID: 8591a6258c2b99a42be02494f0257b07
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      forest_BANBOO_BIHAND_0: -496081855
+      "\u6885_0": 2044975883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
