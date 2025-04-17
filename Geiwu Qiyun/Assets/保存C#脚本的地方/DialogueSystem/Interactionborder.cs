@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractionBorder : MonoBehaviour
 {
     public GameObject border;
-    public DialogueManager interactionAndCommunite;
+    public DialogueManager2 interactionAndCommunite;
     private bool isInRange = false;
 
     private void OnTriggerEnter(Collider other)
