@@ -1,9 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionBorder : MonoBehaviour
 {
     public GameObject border;
-    public DialogueManager interactionAndCommunite; // ÒýÓÃ½Å±¾
+    public DialogueManager interactionAndCommunite;
     private bool isInRange = false;
 
     private void OnTriggerEnter(Collider other)
@@ -30,7 +32,7 @@ public class InteractionBorder : MonoBehaviour
         {
             if (interactionAndCommunite != null)
             {
-                interactionAndCommunite.Interact();
+                interactionAndCommunite.StartDialogue();
             }
         }
     }
