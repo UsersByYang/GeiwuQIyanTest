@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item1 : MonoBehaviour
+public class ItemOnWorld : MonoBehaviour
 {
     public Item thisItem;
     public Inventory playerInventory;
@@ -13,6 +13,8 @@ public class Item1 : MonoBehaviour
         {
             AddNewItem();
             Destroy(gameObject);
+
+            ItemManager.Instance.OnItemCollected(); // 通知管理器物品被收集
         }
     }
 

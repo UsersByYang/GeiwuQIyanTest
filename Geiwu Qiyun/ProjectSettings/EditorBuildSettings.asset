@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/WuZhiScence.unity
     guid: 30d843986687353428274542b34acddc
   - enabled: 1
+    path: Assets/Scenes/DiaoDingScence.unity
+    guid: 33670bd4de593cc49a1ae6c315bfa639
+  - enabled: 1
     path: Assets/Scenes/LiangChang.unity
     guid: 0886ee1b82d855f4bb43bcd13a62f4c1
+  - enabled: 1
+    path: Assets/Scenes/XiaoKongScence.unity
+    guid: f107b417edb9b924b8cfba9a8dd4af56
   m_configObjects: {}
