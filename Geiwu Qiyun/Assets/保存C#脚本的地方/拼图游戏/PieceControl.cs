@@ -18,10 +18,6 @@ public class PieceControl : MonoBehaviour
     //鼠标点击开始，计算偏移量
     private void dragBeginning()
     {
-        Vector3 worldPositon;
-        if ()
-        { 
         
-        }
     }
 }
