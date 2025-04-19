@@ -26,8 +26,8 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        IsWalk();
-        flip();
+        IsWalk();//flip();
+        
 
         OpenMyBag();
 
@@ -51,25 +51,15 @@ public class move : MonoBehaviour
         Vector3 playerDrection = new Vector3(moveX * speed, playerRigidbody.velocity.y, moveZ * speed);
         playerRigidbody.velocity = playerDrection;
 
-        bool Judgement = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
-        bool Judgement2 = Mathf.Abs(playerRigidbody.velocity.z) > Mathf.Epsilon && playerRigidbody.velocity.z > 0;
-        bool Judgement3 = Mathf.Abs(playerRigidbody.velocity.z) > Mathf.Epsilon && playerRigidbody.velocity.z < 0;
+        bool Judgement = playerRigidbody.velocity.x > 0.1f;        // 右
+        bool Judgement2 = playerRigidbody.velocity.z > 0.1f;       // 后
+        bool Judgement3 = playerRigidbody.velocity.z < -0.1f;      // 前
+        bool Judgement4 = playerRigidbody.velocity.x < -0.1f;
 
         playerAnimation.SetBool("right", Judgement);
         playerAnimation.SetBool("back", Judgement2);
         playerAnimation.SetBool("front", Judgement3);
-    }
-    //反转
-    void flip()
-    {
-        bool Judgement = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
-        if (Judgement)
-        {
-            if (playerRigidbody.velocity.x > 0.1f)
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
-            if (playerRigidbody.velocity.x < -0.1f)
-                transform.localRotation = Quaternion.Euler(0, 180, 0);
-        }
+        playerAnimation.SetBool("left", Judgement4);
     }
 
     void OpenMyBag()
@@ -84,3 +74,15 @@ public class move : MonoBehaviour
 }
     
 
+//反转
+    /*void flip()
+    {
+        bool Judgement = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
+        if (Judgement)
+        {
+            if (playerRigidbody.velocity.x > 0.1f)
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            if (playerRigidbody.velocity.x < -0.1f)
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+    }*/
