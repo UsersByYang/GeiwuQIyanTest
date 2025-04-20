@@ -11,8 +11,8 @@ public class DialogueManager2 : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Image characterSpriteImage;
-    private int currentDialogueIndex = 0;
-    private int currentLineIndex = 0;
+    public int currentDialogueIndex = 0;
+    public int currentLineIndex = 0;
     public bool isDialogueActive = false;
     private move playerMovement; // 对话时禁用方向键
     public GameObject dialogueBox;
@@ -79,7 +79,7 @@ public class DialogueManager2 : MonoBehaviour
         }
     }
 
-    private void EndDialogue()
+    public virtual  void EndDialogue()
     {
         isDialogueActive = false;
         if (playerMovement != null)

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/XiaoKongScence.unity
     guid: f107b417edb9b924b8cfba9a8dd4af56
+  - enabled: 1
+    path: Assets/Scenes/pintuScene.unity
+    guid: f86c194829c159b45b6642d305b57054
   m_configObjects: {}

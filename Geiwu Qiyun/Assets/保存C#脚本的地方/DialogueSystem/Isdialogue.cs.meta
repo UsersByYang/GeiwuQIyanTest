@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: 9eb34d8e7efc7114ebee3181b9fe1ac4
+guid: f725973f017763e46bff0ac6053801bb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - targetImage: {instanceID: 0}
-  - originalImage: {instanceID: 0}
-  - puzzlePiecePrefab: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
