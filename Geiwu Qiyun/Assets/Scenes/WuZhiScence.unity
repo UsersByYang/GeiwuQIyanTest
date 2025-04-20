@@ -2904,7 +2904,7 @@ PrefabInstance:
     - target: {fileID: 2305264833382826241, guid: 33912c116c4ad7044b5dde510cfd9e2a, type: 3}
       propertyPath: myBag
       value: 
-      objectReference: {fileID: 811894449}
+      objectReference: {fileID: 1396076423}
     - target: {fileID: 3156573347895334421, guid: 33912c116c4ad7044b5dde510cfd9e2a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.057248626
@@ -11429,6 +11429,11 @@ Transform:
   - {fileID: 1538607401}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1396076423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5586712192329696838, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
+  m_PrefabInstance: {fileID: 492507384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1398390181
 GameObject:
   m_ObjectHideFlags: 0
