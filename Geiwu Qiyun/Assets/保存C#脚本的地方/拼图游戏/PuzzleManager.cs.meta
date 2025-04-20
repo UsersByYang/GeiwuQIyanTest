@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9eb34d8e7efc7114ebee3181b9fe1ac4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - targetImage: {fileID: 5531774176132953558, guid: bfbd81b593749524dbc9494e7adfb35d, type: 3}
+  - originalImage: {fileID: 2800000, guid: 6c829f8091a402040b2e600c7a8f218e, type: 3}
+  - puzzlePiecePrefab: {fileID: 4325925064128381158, guid: bf7f5d9f884f4f74f89d08949a7bf9ee, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
