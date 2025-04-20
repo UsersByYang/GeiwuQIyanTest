@@ -14,7 +14,7 @@ public class DialogueManager2 : MonoBehaviour
     public int currentDialogueIndex = 0;
     public int currentLineIndex = 0;
     public bool isDialogueActive = false;
-    private move playerMovement; // 对话时禁用方向键
+    protected move playerMovement; // 对话时禁用方向键
     public GameObject dialogueBox;
     public float typingSpeed = 0.05f; // 每个字符显示的间隔时间
     private Coroutine typingCoroutine;
@@ -32,7 +32,7 @@ public class DialogueManager2 : MonoBehaviour
         }
     }
 
-    public void StartDialogue()
+    public virtual void StartDialogue()
     {
         if (dialogues.Length > 0) // 有对话，则激活对话框
         {
@@ -49,7 +49,7 @@ public class DialogueManager2 : MonoBehaviour
         }
     }
 
-    private void DisplayDialogueLine()
+    protected void DisplayDialogueLine()
     {
         if (currentLineIndex < dialogues[currentDialogueIndex].lines.Length)
         {

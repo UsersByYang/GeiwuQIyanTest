@@ -6,6 +6,7 @@ public class ItemOnWorld : MonoBehaviour
 {
     public Item thisItem;
     public Inventory playerInventory;
+    public bool isItemPicked=false; 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +14,7 @@ public class ItemOnWorld : MonoBehaviour
         {
             AddNewItem();
             Destroy(gameObject);
-
+            isItemPicked = true;
             ItemManager.Instance.OnItemCollected(); // 通知管理器物品被收集
         }
     }

@@ -1,10 +1,11 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ItemManager : MonoBehaviour
 {
+   
     public static ItemManager Instance; // 单例
 
     [Header("场景设置")]
@@ -52,6 +53,7 @@ public class ItemManager : MonoBehaviour
     {
         if (collectedItems >= totalItems)
         {
+            
             // 延迟跳转（可选）
             Invoke(nameof(LoadNextScene), sceneSwitchDelay);
         }
@@ -69,8 +71,18 @@ public class ItemManager : MonoBehaviour
             Debug.LogError("未设置目标场景名称！");
         }
     }
-}*/
-using System.Collections;
+    //判断
+    //public bool AreAllItemsCollected()
+    //{
+    //    return collectedItems >= totalItems;
+    //}
+}
+
+
+
+
+
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -138,14 +150,16 @@ public class ItemManager : MonoBehaviour
     {
         if (collectedItems >= totalItems)
         {
-            // 延迟跳转（可选）
-            Invoke(nameof(LoadNextScene), sceneSwitchDelay);
-
             // 启用对话脚本
             if (dialogueScript != null)
             {
-                dialogueScript.IsDialogue();
+                dialogueScript.StartDialogue();
+                Invoke(nameof(LoadNextScene), sceneSwitchDelay);
             }
+            // 延迟跳转（可选）
+            
+
+            
         }
     }
 
@@ -161,4 +175,4 @@ public class ItemManager : MonoBehaviour
             Debug.LogError("未设置目标场景名称！");
         }
     }
-}
+}*/
