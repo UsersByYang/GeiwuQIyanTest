@@ -61,11 +61,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     private void JugeEnd()
     {
-        if (puzzleManager.num >= puzzleManager.rows * puzzleManager.columns)
-        {
-            Debug.Log("---------游戏结束--------------");
-
-        }
+        puzzleManager.CheckGameEnd(); // 触发检查
     }
 
     private bool IsInCorrectPosition()

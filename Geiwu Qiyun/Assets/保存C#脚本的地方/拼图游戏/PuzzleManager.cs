@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
+    public string targetSceneName;
+
+
     public GameObject targetImage;
     public Texture2D originalImage; // 原始图片
     public int rows = 3; // 行数
@@ -85,7 +89,14 @@ public class PuzzleManager : MonoBehaviour
         return rightPos[posindexX, posindexY];
     }
 
-
+    public void CheckGameEnd()
+    {
+        if (num >= rows * columns)
+        {
+            Debug.Log("游戏结束，跳转场景！");
+            SceneManager.LoadScene(targetSceneName); // 跳转到目标场景
+        }
+    }
     // Update is called once per frame
     void Update()
     {
