@@ -3029,7 +3029,7 @@ PrefabInstance:
       objectReference: {fileID: 1396076423}
     - target: {fileID: 2305264833382826241, guid: 33912c116c4ad7044b5dde510cfd9e2a, type: 3}
       propertyPath: speed
-      value: 20.53
+      value: 10.8
       objectReference: {fileID: 0}
     - target: {fileID: 3156573347895334421, guid: 33912c116c4ad7044b5dde510cfd9e2a, type: 3}
       propertyPath: m_LocalScale.x

@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void EndDialogue()
+    public virtual  void EndDialogue()
     {
         isDialogueActive = false;
         if (playerMovement != null)
