@@ -1,37 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Isdialogue : DialogueManager2
 {
-    private ItemOnWorld itemPickup;
+    public string scene;
+    private bool isDialogueInProgress = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        itemPickup = FindObjectOfType<ItemOnWorld>();
-        if (itemPickup == null)
-        {
-            Debug.LogError("ItemPickup script not found.");
-        }
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        CheckForDialogueInput();
     }
 
-    public void IsDialogue()
+    private void CheckForDialogueInput()
     {
-        if (itemPickup != null && itemPickup.isItemPicked)
+        if (Input.GetKeyDown(KeyCode.E) && ItemManager.Instance.AreAllItemsCollected() && !isDialogueInProgress)
         {
-            currentLineIndex = 0;
             StartDialogue();
+            isDialogueInProgress = true;
         }
-        else
+        else if (Input.GetKeyDown(KeyCode.E) && !ItemManager.Instance.AreAllItemsCollected())
         {
-            Debug.Log("You need to pick up the item first.");
+            Debug.Log("物品还未全部收集，无法对话");
         }
     }
+
+    
+    public override void EndDialogue()
+    {
+        base.EndDialogue();
+        if (ItemManager.Instance.AreAllItemsCollected())
+        {
+            SceneManager.LoadScene(scene);
+        }
+        isDialogueInProgress = false;
+    }
+
+
 }
+

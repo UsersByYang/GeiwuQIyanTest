@@ -1860,7 +1860,7 @@ PrefabInstance:
     - target: {fileID: 5996346215728462022, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 9c2b95da890cd604298e9b83667de3a1, type: 2}
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
     - target: {fileID: 5996346215728462022, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -1868,7 +1868,7 @@ PrefabInstance:
     - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 9c2b95da890cd604298e9b83667de3a1, type: 2}
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
     - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -12198,8 +12198,20 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: "\u662F\u7684\u662F\u7684"
-      characterSprite: {fileID: 0}
+      dialogueText: "\u4E00\u5C0A\u5DE8\u5927\u7684\u9F0E\u5750\u843D\u5728\u89D2\u843D"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+    - characterName: 
+      dialogueText: "\u4E0B\u9762\u4F3C\u4E4E\u538B\u7740\u7CBE\u5BC6\u7684\u673A\u5173"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+    - characterName: 
+      dialogueText: "\u4F3C\u4E4E\u8981\u5236\u4F5C\u4E00\u4E2A\u673A\u5173.\u5C06\u5176\u79FB\u52A8\u5230\u53E6\u5916\u4E00\u4E2A\u89D2\u843D"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - characterName: 
+      dialogueText: "\u4E0D\u8FC7\u6211\u73B0\u5728\u5236\u4F5C\u673A\u5173\u8FD8\u7F3A\u70B9\u6750\u6599"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - characterName: 
+      dialogueText: "\u5148\u53BB\u56DB\u5468\u627E\u627E\u518D\u6765\u5427"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
   nameText: {fileID: 1432715339}
   dialogueText: {fileID: 1949404553}
   characterSpriteImage: {fileID: 1759256273}
@@ -12208,6 +12220,7 @@ MonoBehaviour:
   isDialogueActive: 0
   dialogueBox: {fileID: 1680459}
   typingSpeed: 0.05
+  scene: pintuScene
 --- !u!114 &1487856802 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
