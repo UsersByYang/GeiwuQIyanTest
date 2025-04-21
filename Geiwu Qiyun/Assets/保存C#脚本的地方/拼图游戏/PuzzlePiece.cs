@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+   
     public int x_index;
     public int y_index;
     private RectTransform rectTransform;
@@ -63,6 +64,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if (puzzleManager.num >= puzzleManager.rows * puzzleManager.columns)
         {
             Debug.Log("---------ÓÎÏ·½áÊø--------------");
+
         }
     }
 

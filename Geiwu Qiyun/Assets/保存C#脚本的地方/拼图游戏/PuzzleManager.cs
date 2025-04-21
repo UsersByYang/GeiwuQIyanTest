@@ -40,6 +40,7 @@ public class PuzzleManager : MonoBehaviour
                 puzzlePiece.GetComponent<RectTransform>().anchoredPosition =
                     new Vector2(Random.Range(0f, 250f), Random.Range(0f, 250f));
                 RecordRightPos(x, y);
+                //puzzlePiece.GetComponent<RectTransform>().anchoredPosition = rightPos[x, y];
             }
         }
 
@@ -61,13 +62,21 @@ public class PuzzleManager : MonoBehaviour
 
     void RecordRightPos(int posindexX, int posindexY)
     {
-        RectTransform rectTransform = targetImage.GetComponent<RectTransform>();
-        float pieceWidth = rectTransform.rect.width / columns;
-        float pieceHeight = rectTransform.rect.height / rows;
+        //RectTransform rectTransform = targetImage.GetComponent<RectTransform>();
+        // float pieceWidth = rectTransform.rect.width / columns;
+        // float pieceHeight = rectTransform.rect.height / rows;
+        Vector2 anchorePosition = targetImage.GetComponent<RectTransform>().anchoredPosition;
+        float x1 = (float)(anchorePosition.x - 417 / 2.5);
+        float y1 = (float)(anchorePosition.y - 530 / 2.5);
+        Vector2 targetpos = new Vector2(x1, y1);
+        float x2 =(float)( targetpos.x + posindexX * 417 / 2.5);
+        float y2 = (float)(targetpos.y + posindexY * 530 / 2.5);
+        rightPos[posindexX, posindexY] = new Vector3(x2 ,y2 , 0);
         // 获取原图的实际位置
-        Vector2 anchoredPosition = rectTransform.anchoredPosition;
+       // Vector2 anchoredPosition = rectTransform.anchoredPosition;
         // 计算目标位置，考虑原图的实际位置
-        rightPos[posindexX, posindexY] = new Vector3(anchoredPosition.x + (posindexX * pieceWidth) - (rectTransform.rect.width / 2) + (pieceWidth / 2), anchoredPosition.y + (posindexY * pieceHeight) - (rectTransform.rect.height / 2) + (pieceHeight / 2), 0);
+        //rightPos[posindexX, posindexY] = new Vector3(anchoredPosition.x + (posindexX * pieceWidth) - (rectTransform.rect.width / 2) + (pieceWidth / 2), anchoredPosition.y + (posindexY * pieceHeight) - (rectTransform.rect.height / 2) + (pieceHeight / 2), 0);
+
     }
 
     public Vector3 GetCorrectPosition(int posindexX, int posindexY)
