@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Object
   m_EditorClassIdentifier: 
   itemName: Object
-  itemImage: {fileID: 1787882140, guid: 9fa42a03df0976846867e6d45350bc98, type: 3}
+  itemImage: {fileID: 21300000, guid: d42b008ba3e90774e83340ba3dd0a063, type: 3}
   itemHeld: 1
   itemInfo: object
   equip: 1
