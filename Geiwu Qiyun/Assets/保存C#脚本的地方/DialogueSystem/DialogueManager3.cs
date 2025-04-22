@@ -187,9 +187,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 public class DialogueManager3 : MonoBehaviour
 {
-
+    public string Scene;
     public Dialogue[] dialogues;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
@@ -262,6 +263,8 @@ public class DialogueManager3 : MonoBehaviour
         {
             dialogueBox.SetActive(false); // ¹Ø±Õ¶Ô»°¿ò
         }
+        SceneManager.LoadScene(Scene);
+
         
     }
 

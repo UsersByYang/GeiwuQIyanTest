@@ -1025,6 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff44effdb47e83408cd466faf1e808c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scene: LiangChang
   dialogues:
   - lines:
     - characterName: "\u5947"
@@ -1352,7 +1353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952644371354710830, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_Name
-      value: Canvas_Dialogue (1)
+      value: Canvas_Dialogue (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6952644371354710830, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_IsActive
