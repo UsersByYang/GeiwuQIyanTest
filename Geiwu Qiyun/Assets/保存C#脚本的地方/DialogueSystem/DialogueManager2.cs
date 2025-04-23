@@ -7,6 +7,7 @@ using TMPro;
 
 public class DialogueManager2 : MonoBehaviour
 {
+    public event System.Action DialogueComplete;//对话结束后检测； 
     public Dialogue[] dialogues;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
@@ -89,6 +90,12 @@ public class DialogueManager2 : MonoBehaviour
         if (dialogueBox != null)
         {
             dialogueBox.SetActive(false); // 关闭对话框
+        }
+        //标记
+        if (DialogueComplete != null)
+        {
+
+            DialogueComplete();
         }
     }
 
