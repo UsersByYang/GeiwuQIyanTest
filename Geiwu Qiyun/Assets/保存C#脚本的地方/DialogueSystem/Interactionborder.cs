@@ -26,14 +26,22 @@ public class InteractionBorder : MonoBehaviour
         }
     }
 
+    /* private void Update()
+     {
+         if (isInRange && Input.GetKeyDown(KeyCode.E))
+         {
+             if (interactionAndCommunite != null)
+             {
+                 interactionAndCommunite.StartDialogue();
+             }
+         }
+     }*/
     private void Update()
     {
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (interactionAndCommunite != null)
-            {
-                interactionAndCommunite.StartDialogue();
-            }
+
+            interactionAndCommunite.StartDialogue();
         }
     }
 }
