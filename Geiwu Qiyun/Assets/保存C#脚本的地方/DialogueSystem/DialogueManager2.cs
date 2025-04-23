@@ -34,9 +34,14 @@ public class DialogueManager2 : MonoBehaviour
     }
     public virtual void StartDialogue()
     {
+        
         if (dialogues.Length > 0) // 有对话，则激活对话框
         {
             isDialogueActive = true;
+            if (playerMovement != null) // 激活后禁用人物移动
+            {
+                playerMovement.enabled = false;
+            }
             if (dialogueBox != null)
             {
                 dialogueBox.SetActive(true);
@@ -104,7 +109,34 @@ public class DialogueManager2 : MonoBehaviour
             EndDialogue();
         }
     }
-    
+    /*private void Update()
+    {
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.E))
+        {
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+                dialogueText.text = dialogues[currentDialogueIndex].lines[currentLineIndex - 1].dialogueText;
+            }
+            DisplayDialogueLine();
+        }
+    }*/
+    private void Update()
+    {
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.R))
+        {
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+                dialogueText.text = dialogues[currentDialogueIndex].lines[currentLineIndex].dialogueText;
+                CheckForDialogueEndAndClose();
+            }
+            else
+            {
+                DisplayDialogueLine();
+            }
+        }
+    }
 }
 
 

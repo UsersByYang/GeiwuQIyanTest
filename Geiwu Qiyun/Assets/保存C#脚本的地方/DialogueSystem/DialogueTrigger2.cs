@@ -6,7 +6,7 @@ public class DialogueTrigger2 : MonoBehaviour
 {
     public DialogueManager2 dialogueManager;
     private bool isInRange = false;
-    private bool Trrigered = false;
+    public GameObject dialogueBoxToClose;
 
     // Start is called before the first frame update
     void Start()
@@ -21,15 +21,24 @@ public class DialogueTrigger2 : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (!Trrigered&&other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             isInRange = true;
             if (isInRange)
             {
                 dialogueManager.StartDialogue();
+                StartCoroutine(CloseDialogueBoxAfterDelay());
                 Destroy(this.gameObject);
             }
-            Trrigered = true;
+        }
+    }
+
+    private IEnumerator CloseDialogueBoxAfterDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        if (dialogueBoxToClose != null)
+        {
+            dialogueBoxToClose.gameObject. SetActive(false);
         }
     }
 
@@ -40,6 +49,4 @@ public class DialogueTrigger2 : MonoBehaviour
             isInRange = false;
         }
     }
-
-
 }
