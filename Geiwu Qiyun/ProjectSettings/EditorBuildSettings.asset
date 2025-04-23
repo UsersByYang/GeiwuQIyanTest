@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pintuScene.unity
     guid: f86c194829c159b45b6642d305b57054
+  - enabled: 1
+    path: "Assets/Scenes/Y\u7ED3\u675F\u573A\u666F.unity"
+    guid: 934511443e8cc7244899dadb2fb0046c
   m_configObjects: {}
