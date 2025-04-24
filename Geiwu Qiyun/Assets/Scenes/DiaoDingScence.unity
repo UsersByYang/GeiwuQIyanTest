@@ -6801,7 +6801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff44effdb47e83408cd466faf1e808c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: LiangChang
+  Scene: DiaoDingScene2
   dialogues:
   - lines:
     - characterName: "\u5947"
