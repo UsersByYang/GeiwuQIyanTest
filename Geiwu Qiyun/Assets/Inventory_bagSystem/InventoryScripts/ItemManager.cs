@@ -191,7 +191,7 @@ using UnityEngine.SceneManagement;
 public class ItemManager : MonoBehaviour
 {
     public static ItemManager Instance; // 单例
-    public DialogueManager2 dialoguemanager1;//收集完物品前
+    public DialogueManager2 dialogueManager1;//收集完物品前
     public DialogueManagerAuto dialogueManager2;//剪完物品后；
     public FadeAndLoadScene2 fadeandloadscene;//跳转
 
@@ -242,28 +242,25 @@ public class ItemManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                dialoguemanager1.StartDialogue();
+                dialogueManager1.StartDialogue();
 
             }
 
-                if (dialoguemanager1.DialogueEnd)//这里是代表已经和鼎交互
-                {
+            if (dialogueManager1.DialogueEnd)//这里是代表已经和鼎交互
+            {
 
                     dialogueManager2.StartDialogue();
-                    if (dialogueManager2.DialogueEnd && dialoguemanager1.DialogueEnd)//同时对话结束跳转
+                    if (dialogueManager1.DialogueEnd && dialogueManager2.DialogueEnd)//同时对话结束跳转
                     {
                         fadeandloadscene.Load();
                     }
-                }
-            
-            else if(dialoguemanager1==null&&dialogueManager2==null)
-
-            {
-                fadeandloadscene.Load();
             }
+            
+           
             // 延迟跳转（可选）
             //Invoke(nameof(LoadNextScene), sceneSwitchDelay);
         }
+       
     }
 
     // 跳转到目标场景

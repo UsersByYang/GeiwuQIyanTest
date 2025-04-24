@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DialogueTriggerAuto : MonoBehaviour
 {
-    public DialogueManager2 dialogueManager2;
+    public DialogueManagerAuto dialogueManager2;
     private bool isInRange = false;
 
     private void OnTriggerEnter(Collider other)
@@ -26,6 +26,7 @@ public class DialogueTriggerAuto : MonoBehaviour
         if (isInRange)
         {
             dialogueManager2.StartDialogue();
+            Destroy(this.gameObject);
         }
     }
 }
