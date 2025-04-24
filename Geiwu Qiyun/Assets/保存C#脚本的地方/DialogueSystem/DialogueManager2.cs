@@ -18,7 +18,8 @@ public class DialogueManager2 : MonoBehaviour
     protected move playerMovement; // 对话时禁用方向键
     public GameObject dialogueBox;
     public float typingSpeed = 0.05f; // 每个字符显示的间隔时间
-    private Coroutine typingCoroutine;
+    public Coroutine typingCoroutine;
+    public bool DialogueEnd = false;//对话结束标志
 
     private void Start()
     {
@@ -52,6 +53,7 @@ public class DialogueManager2 : MonoBehaviour
 
     protected void DisplayDialogueLine()
     {
+        //检测错误；
         Debug.Log($"Current Dialogue Index: {currentDialogueIndex}, Current Line Index: {currentLineIndex}");
         if (currentLineIndex < dialogues[currentDialogueIndex].lines.Length)
         {
@@ -93,6 +95,7 @@ public class DialogueManager2 : MonoBehaviour
         {
             dialogueBox.SetActive(false);
             currentLineIndex = 0;// 关闭对话框
+            DialogueEnd = true;
         }
         //标记
         if (DialogueComplete != null)

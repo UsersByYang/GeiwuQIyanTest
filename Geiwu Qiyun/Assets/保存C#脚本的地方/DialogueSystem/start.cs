@@ -17,6 +17,7 @@ public class start : MonoBehaviour
     public GameObject dialogueBox;
     public float typingSpeed = 0.05f; // 每个字符显示的间隔时间
     private Coroutine typingCoroutine;
+    public bool DialogueEnd=false;
 
     private void Start()
     {
@@ -88,6 +89,7 @@ public class start : MonoBehaviour
         if (dialogueBox != null)
         {
             dialogueBox.SetActive(false); // 关闭对话框
+            DialogueEnd = true;
         }
     }
 

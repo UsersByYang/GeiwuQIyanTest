@@ -191,6 +191,9 @@ using UnityEngine.SceneManagement;
 public class ItemManager : MonoBehaviour
 {
     public static ItemManager Instance; // 单例
+    public DialogueManager2 dialoguemanager1;//收集完物品前
+    public DialogueManagerAuto dialogueManager2;//剪完物品后；
+    public FadeAndLoadScene2 fadeandloadscene;//跳转
 
     [Header("场景设置")]
     public string nextSceneName; // 目标场景名称
@@ -237,13 +240,34 @@ public class ItemManager : MonoBehaviour
     {
         if (collectedItems >= totalItems)
         {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                dialoguemanager1.StartDialogue();
+
+
+                if (dialoguemanager1.DialogueEnd)//这里是代表已经和鼎交互
+                {
+
+                    dialogueManager2.StartDialogue();
+                    if (dialogueManager2.DialogueEnd && dialoguemanager1.DialogueEnd)//同时对话结束跳转
+                    {
+                        fadeandloadscene.Load();
+                    }
+                }
+            }
+            else if(dialoguemanager1==null&&dialogueManager2==null)
+
+            {
+                fadeandloadscene.Load();
+            }
             // 延迟跳转（可选）
             //Invoke(nameof(LoadNextScene), sceneSwitchDelay);
         }
     }
 
     // 跳转到目标场景
-    private void LoadNextScene()
+    //这里调用FadeAndLoadScene的脚本的跳转功能，就不用了；
+    /*private void LoadNextScene()
     {
         if (!string.IsNullOrEmpty(nextSceneName))
         {
@@ -253,11 +277,5 @@ public class ItemManager : MonoBehaviour
         {
             Debug.LogError("未设置目标场景名称！");
         }
-    }
-
-    //判断
-    public bool AreAllItemsCollected()
-    {
-        return collectedItems >= totalItems;
-    }
+    }*/
 }
