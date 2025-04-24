@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7513dffe85341394fab94ff4f5e67fc1, type: 3}
-  m_Name: Knife
+  m_Name: wood
   m_EditorClassIdentifier: 
-  itemName: Knife
-  itemImage: {fileID: -201131959, guid: 9fa42a03df0976846867e6d45350bc98, type: 3}
+  itemName: "\u6728\u5934"
+  itemImage: {fileID: 0}
   itemHeld: 1
-  itemInfo: this is a object
+  itemInfo: "\u6728\u5934"
   equip: 1
