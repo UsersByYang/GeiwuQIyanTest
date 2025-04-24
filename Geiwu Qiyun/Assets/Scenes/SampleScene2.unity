@@ -45872,7 +45872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 810165865}
-  sceneToLoad: LiangChang
+  sceneToLoad: LiangCangQian
 --- !u!1 &1766778527
 GameObject:
   m_ObjectHideFlags: 0

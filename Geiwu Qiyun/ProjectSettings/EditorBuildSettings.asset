@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DiaoDingScene2.unity
     guid: 83db9caf92c7fd74fb34f1bc1403c860
+  - enabled: 1
+    path: Assets/Scenes/LiangCangQian.unity
+    guid: f970e1a9a82f0aa4593ae2d4317d944d
   m_configObjects: {}
