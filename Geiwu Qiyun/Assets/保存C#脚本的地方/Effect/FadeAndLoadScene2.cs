@@ -1,28 +1,29 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class FadeAndLoadScene : MonoBehaviour
+public class FadeAndLoadScene2 : MonoBehaviour
 {
-    public Image fadeImage; // 用于淡入淡出的Image组件
-    public Button fadeButton; // 点击的按钮
-    public string sceneToLoad; // 要加载的场景名称
-
-    private void Start()
+    public Image fadeImage;
+    public string sceneToLoad;
+    // Start is called before the first frame update
+    void Start()
     {
-        // 为按钮添加点击事件
-        fadeButton.onClick.AddListener(OnButtonClick);
         
     }
 
-    private void OnButtonClick()
+    // Update is called once per frame
+    void Update()
     {
-        // 开始淡入淡出协程
+        
+    }
+    public void Load()
+    {
         StartCoroutine(FadeAndLoad());
     }
-
-    private  IEnumerator FadeAndLoad()
+    public  IEnumerator FadeAndLoad()
     {
         // 淡入效果
         float fadeDuration = 1f; // 淡入时间

@@ -11,6 +11,7 @@ public class ScenceUpdate : MonoBehaviour
     public bool goToNextScene = false;
     public string nextSceneName = "WuZhiScence";
     public GameObject popup;
+    public FadeAndLoadScene2 fadeandloadscene2;
 
     private void Update()
     {
@@ -45,7 +46,8 @@ public class ScenceUpdate : MonoBehaviour
 
         if (goToNextScene)
         {
-            SceneManager.LoadScene(nextSceneName);
+            fadeandloadscene2.Load();
+            //SceneManager.LoadScene(nextSceneName);
         }
     }
 }
