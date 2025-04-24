@@ -244,6 +244,7 @@ public class ItemManager : MonoBehaviour
             {
                 dialoguemanager1.StartDialogue();
 
+            }
 
                 if (dialoguemanager1.DialogueEnd)//这里是代表已经和鼎交互
                 {
@@ -254,7 +255,7 @@ public class ItemManager : MonoBehaviour
                         fadeandloadscene.Load();
                     }
                 }
-            }
+            
             else if(dialoguemanager1==null&&dialogueManager2==null)
 
             {
