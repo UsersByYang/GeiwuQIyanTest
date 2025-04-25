@@ -19,7 +19,7 @@ public class FadeAndLoadScene2 : MonoBehaviour
     {
         
     }
-    public void Load()
+    public virtual void Load()
     {
         StartCoroutine(FadeAndLoad());
     }

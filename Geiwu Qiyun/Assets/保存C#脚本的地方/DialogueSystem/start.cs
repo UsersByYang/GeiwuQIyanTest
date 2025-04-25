@@ -83,7 +83,7 @@ public class start : MonoBehaviour
         }
     }
 
-    private void EndDialogue()
+    public virtual  void EndDialogue()
     {
         isDialogueActive = false;
         if (dialogueBox != null)

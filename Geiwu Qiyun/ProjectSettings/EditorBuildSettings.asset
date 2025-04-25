@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LiangCangQian.unity
     guid: f970e1a9a82f0aa4593ae2d4317d944d
+  - enabled: 1
+    path: Assets/Scenes/preface.unity
+    guid: 9851a44cd2c94b845b856dbaf7c6cd53
   m_configObjects: {}
