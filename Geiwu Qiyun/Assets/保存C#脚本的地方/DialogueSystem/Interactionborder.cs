@@ -5,9 +5,14 @@ using UnityEngine;
 public class InteractionBorder : MonoBehaviour
 {
     public GameObject border;
+    public GameObject AirWall;
     public DialogueManager2 interactionAndCommunite;
-    private bool isInRange = false;
+    public bool isInRange = false;
 
+    private void Start()
+    {
+        AirWall.gameObject.SetActive(true);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -25,6 +30,17 @@ public class InteractionBorder : MonoBehaviour
             border.SetActive(false);
         }
     }
+    public virtual void isDialogue()
+    {
+        if (isInRange && Input.GetKeyDown(KeyCode.E))
+        {
+            interactionAndCommunite.StartDialogue();
+        }
+        if (interactionAndCommunite.DialogueEnd)
+        {
+            AirWall.gameObject.SetActive(false);
+        }
+    }
 
     /* private void Update()
      {
@@ -36,12 +52,8 @@ public class InteractionBorder : MonoBehaviour
              }
          }
      }*/
-    private void Update()
+     void Update()
     {
-        if (isInRange && Input.GetKeyDown(KeyCode.E))
-        {
-
-            interactionAndCommunite.StartDialogue();
-        }
+        isDialogue();
     }
 }

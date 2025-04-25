@@ -199,8 +199,8 @@ public class ItemManager : MonoBehaviour
     public string nextSceneName; // 目标场景名称
     public float sceneSwitchDelay = 1f; // 跳转延迟（可选）
 
-    private int totalItems; // 场景中物品总数
-    private int collectedItems; // 已收集物品数
+    protected int totalItems; // 场景中物品总数
+    protected int collectedItems; // 已收集物品数
 
     void Awake()
     {
@@ -215,7 +215,7 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    void Start()
+    public void Start()
     {
         // 初始化时统计场景中所有物品
         UpdateTotalItems();
@@ -236,7 +236,7 @@ public class ItemManager : MonoBehaviour
     }
 
     // 检测是否所有物品均被收集
-    private void CheckAllItemsCollected()
+    public virtual void CheckAllItemsCollected()
     {
         if (collectedItems >= totalItems)
         {
