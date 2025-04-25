@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 300638654}
   fadeButton: {fileID: 1795782161}
-  sceneToLoad: AnimationBroadcast
+  sceneToLoad: preface
 --- !u!1 &1858426293
 GameObject:
   m_ObjectHideFlags: 0
