@@ -1552,8 +1552,8 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: ceshi
-      characterSprite: {fileID: 0}
+      dialogueText: "\u9F0E\u7684\u4E0B\u65B9\u4F3C\u4E4E\u6709\u4EC0\u4E48\u4E1C\u897F"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
   nameText: {fileID: 28164897}
   dialogueText: {fileID: 1778358612}
   characterSpriteImage: {fileID: 1475556287}
@@ -1756,6 +1756,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_margin.w
       value: -25.532665
       objectReference: {fileID: 0}
@@ -1778,6 +1782,10 @@ PrefabInstance:
     - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_fontColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_sharedMaterial
@@ -2632,7 +2640,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: ceshi
+      dialogueText: "\"\u8861,\u52A0\u91CD\u4E8E\u5176\u4E00\u65C1,\u5FC5\u6376;\u6743\u91CD\u76F8\u82E5\u4E5F.\""
+      characterSprite: {fileID: 0}
+    - characterName: 
+      dialogueText: "\"\u5DE7\u4F20\u5219\u6C42\u5176\u6545\""
       characterSprite: {fileID: 0}
   nameText: {fileID: 726097933}
   dialogueText: {fileID: 1166482011}
