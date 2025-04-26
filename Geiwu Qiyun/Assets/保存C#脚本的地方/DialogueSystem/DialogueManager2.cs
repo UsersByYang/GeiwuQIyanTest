@@ -19,7 +19,7 @@ public class DialogueManager2 : MonoBehaviour
     public GameObject dialogueBox;
     public float typingSpeed = 0.05f; // 每个字符显示的间隔时间
     public Coroutine typingCoroutine;
-    public bool DialogueEnd = false;//对话结束标志
+    public bool DialogueEnd ;//对话结束标志
 
     private void Start()
     {

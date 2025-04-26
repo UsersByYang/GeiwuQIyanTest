@@ -154,14 +154,6 @@ public class ItemManager : MonoBehaviour
                         fadeandloadscene.Load();
                    
                 }
-
-
-                else if (dialogueManager1 == null && dialogueManager2 == null)
-                {
-                    fadeandloadscene.Load();
-                }
-
-
             }
                
     }
