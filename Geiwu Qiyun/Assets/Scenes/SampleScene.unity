@@ -20115,7 +20115,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3087148510577833717, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 749957446}
   m_SourcePrefab: {fileID: 100100000, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
 --- !u!1 &727140706
 GameObject:
@@ -20760,6 +20763,26 @@ Transform:
   - {fileID: 117302280}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &749957445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3087148510577833717, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+  m_PrefabInstance: {fileID: 721608057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &749957446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749957445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446351bf0877a034a97f1c28ebc06bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiElement: {fileID: 821830314}
+  toggleKey: 116
+  startHidden: 1
 --- !u!1 &750570705
 GameObject:
   m_ObjectHideFlags: 0
@@ -22500,6 +22523,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &821830314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2854177467239191853, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+  m_PrefabInstance: {fileID: 721608057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &834488522
 GameObject:
   m_ObjectHideFlags: 0
