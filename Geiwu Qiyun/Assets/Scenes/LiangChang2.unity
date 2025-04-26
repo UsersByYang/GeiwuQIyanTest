@@ -1975,7 +1975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &186400397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8217,6 +8217,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &996229536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6952644371354710830, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
+  m_PrefabInstance: {fileID: 1610662651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1005361136
 GameObject:
   m_ObjectHideFlags: 0
@@ -9505,13 +9510,16 @@ MonoBehaviour:
     - characterName: 
       dialogueText: ceshi
       characterSprite: {fileID: 0}
+    - characterName: 
+      dialogueText: ceshi1
+      characterSprite: {fileID: 0}
   nameText: {fileID: 70639795}
   dialogueText: {fileID: 92774295}
   characterSpriteImage: {fileID: 1176722188}
   currentDialogueIndex: 0
   currentLineIndex: 0
   isDialogueActive: 0
-  dialogueBox: {fileID: 2137063502}
+  dialogueBox: {fileID: 996229536}
   typingSpeed: 0.05
   DialogueEnd: 0
   autoAdvanceInterval: 1
@@ -15439,11 +15447,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2137063502 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8313184448300866188, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
-  m_PrefabInstance: {fileID: 1610662651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2146769289 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6249228871406899688, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
