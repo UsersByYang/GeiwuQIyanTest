@@ -59004,7 +59004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   border: {fileID: 366558969}
-  AirWall: {fileID: 1444184022}
+  AirWall: {fileID: 86361862}
   interactionAndCommunite: {fileID: 1080120692}
   isInRange: 0
 --- !u!65 &2142989261

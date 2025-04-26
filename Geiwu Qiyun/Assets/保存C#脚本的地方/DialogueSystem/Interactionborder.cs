@@ -12,6 +12,8 @@ public class InteractionBorder : MonoBehaviour
     private void Start()
     {
         AirWall.gameObject.SetActive(true);
+        
+       
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -55,5 +57,6 @@ public class InteractionBorder : MonoBehaviour
      void Update()
     {
         isDialogue();
+       
     }
 }
