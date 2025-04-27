@@ -440,6 +440,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1593078725390794047, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363281685317771263, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
+      propertyPath: myBag
+      value: 
+      objectReference: {fileID: 11400000, guid: 69630074fe722d44d87d41f1bf6979d6, type: 2}
     - target: {fileID: 8438871259734394922, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
