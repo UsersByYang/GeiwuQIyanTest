@@ -667,6 +667,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 169054797054700881, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082795603293466982, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 2102261087315572708, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -746,6 +754,10 @@ PrefabInstance:
     - target: {fileID: 2102261087315572708, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2854177467239191853, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_Name
+      value: Image
       objectReference: {fileID: 0}
     - target: {fileID: 3087148510577833717, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Name
@@ -2859,10 +2871,10 @@ SceneRoots:
   - {fileID: 1035644956}
   - {fileID: 977463466}
   - {fileID: 508012911}
-  - {fileID: 1001704440}
   - {fileID: 2145074054}
   - {fileID: 281540108}
   - {fileID: 390657144}
   - {fileID: 1568987935}
   - {fileID: 1385636096}
   - {fileID: 1122343293}
+  - {fileID: 1001704440}
