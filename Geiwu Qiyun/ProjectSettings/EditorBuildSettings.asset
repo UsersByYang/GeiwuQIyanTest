@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/XiaoKongQian.unity
     guid: bb93d42dcf47ee74a98238b99252158f
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: cff40285229442343966bb1e0274bc56
   m_configObjects: {}

@@ -9656,7 +9656,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 996229536}
   typingSpeed: 0.05
   DialogueEnd: 0
-  autoAdvanceInterval: 3
+  autoAdvanceInterval: 2
 --- !u!1 &1276966930
 GameObject:
   m_ObjectHideFlags: 0
