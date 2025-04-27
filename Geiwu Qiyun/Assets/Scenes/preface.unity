@@ -543,6 +543,9 @@ MonoBehaviour:
     - characterName: 
       dialogueText: "\u4E8E\u65E0\u5C3D\u5965\u79D8\u4E2D\u6398\u771F\u7406\u4E4B\u5B9D\u85CF"
       characterSprite: {fileID: 0}
+    - characterName: "\u683C\u7269\u4E4B\u957F\u68A6,\u59CB\u7109"
+      dialogueText: "\u4E8E\u65E0\u5C3D\u5965\u79D8\u4E2D\u6398\u771F\u7406\u4E4B\u5B9D\u85CF"
+      characterSprite: {fileID: 0}
   nameText: {fileID: 1089560087}
   dialogueText: {fileID: 1181377082}
   characterSpriteImage: {fileID: 522278309}

@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LiangChang2.unity
     guid: 7a423194cc694d346950c586b44cc57a
+  - enabled: 1
+    path: Assets/Scenes/XiaoKongQian.unity
+    guid: bb93d42dcf47ee74a98238b99252158f
   m_configObjects: {}

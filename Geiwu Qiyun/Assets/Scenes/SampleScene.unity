@@ -29207,8 +29207,8 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: "\u6D4B\u8BD5"
-      characterSprite: {fileID: 0}
+      dialogueText: "\u77F3\u5934\u6321\u4F4F\u4E86\u53BB\u8DEF"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
   nameText: {fileID: 497806210}
   dialogueText: {fileID: 963257918}
   characterSpriteImage: {fileID: 1854160579}
@@ -57629,9 +57629,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - lines:
-    - characterName: 
-      dialogueText: ceshi
-      characterSprite: {fileID: 0}
+    - characterName: "\u5947"
+      dialogueText: "\u597D\u5927\u7684\u623F\u5B50"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - characterName: "\u5947"
+      dialogueText: "\u8FDB\u53BB\u63A2\u7D22\u4E00\u4E0B\u5427"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
   nameText: {fileID: 102579477}
   dialogueText: {fileID: 1467333549}
   characterSpriteImage: {fileID: 1142274420}

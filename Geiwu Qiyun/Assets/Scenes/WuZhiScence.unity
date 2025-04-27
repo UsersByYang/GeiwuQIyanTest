@@ -716,7 +716,7 @@ PrefabInstance:
       objectReference: {fileID: 1573438472}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[0].dialogueText
@@ -732,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[3].dialogueText
-      value: 
+      value: "\u627E\u627E\u79BB\u5F00\u8FD9\u91CC\u7684\u65B9\u6CD5\u5427"
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[2].characterName
@@ -1605,7 +1605,7 @@ PrefabInstance:
       objectReference: {fileID: 1874285511}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.size
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[0].dialogueText
@@ -1645,7 +1645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[9].dialogueText
-      value: "\u5927\u6982\u662F\u8BF4,"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[10].dialogueText
@@ -1807,7 +1807,7 @@ PrefabInstance:
       objectReference: {fileID: 1759256273}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[0].dialogueText
@@ -1815,15 +1815,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[1].dialogueText
-      value: "\u9700\u8981\u7528\u6728\u6750\u7EC4\u6210\u4E00\u4E2A\u8FD0\u8F93\u673A\u5173\u624D\u80FD\u5C06\u5B83\u8FD0\u8F93\u5230\u53E6\u4E00\u4E2A\u89D2\u843D\u91CC"
+      value: "\u6211\u9700\u8981\u7528\u4E00\u4E9B\u7EC4\u6210\u4E00\u4E2A\u8FD0\u8F93\u673A\u5173\u624D\u80FD\u5C06\u5B83\u8FD0\u8F93\u5230\u53E6\u4E00\u4E2A\u89D2\u843D\u91CC"
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[2].dialogueText
-      value: "\u4E5F\u8BB8\u7528\u8FD9\u4E9B\u5C31\u53EF\u4EE5\u7EC4\u6210\u4E00\u4E2A\u8FD0\u8F93\u673A\u5173\u4E86"
+      value: "\u5148\u5230\u56DB\u5468\u770B\u770B\u5427"
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[3].dialogueText
-      value: "\u6765\u5427"
+      value: ......
+      objectReference: {fileID: 0}
+    - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
+      propertyPath: dialogues.Array.data[0].lines.Array.data[4].dialogueText
+      value: "\u8FD9\u4E2A\u77F3\u5934\u6216\u8BB8\u4E5F\u80FD\u6D3E\u4E0A\u7528\u573A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
+      propertyPath: dialogues.Array.data[0].lines.Array.data[1].characterName
+      value: "\u5947"
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[2].characterName
@@ -1834,19 +1842,27 @@ PrefabInstance:
       value: "\u5947"
       objectReference: {fileID: 0}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
+      propertyPath: dialogues.Array.data[0].lines.Array.data[4].characterName
+      value: "\u5947"
+      objectReference: {fileID: 0}
+    - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[0].characterSprite
       value: 
       objectReference: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[1].characterSprite
       value: 
-      objectReference: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+      objectReference: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[2].characterSprite
       value: 
       objectReference: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
       propertyPath: dialogues.Array.data[0].lines.Array.data[3].characterSprite
+      value: 
+      objectReference: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - target: {fileID: 850665114941329618, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
+      propertyPath: dialogues.Array.data[0].lines.Array.data[4].characterSprite
       value: 
       objectReference: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - target: {fileID: 2493926735422515296, guid: efc87825a757a3842a027eeac5ae507a, type: 3}
@@ -4578,7 +4594,7 @@ MonoBehaviour:
       dialogueText: ......
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u5947"
-      dialogueText: "\u4E00\u4E2A\u6559\u4E66\u7684\u8BB2\u684C"
+      dialogueText: "\u4E00\u4E2A\u51E0\u6848"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u5947"
       dialogueText: "\u4E0A\u9762\u6709\u8001\u5E08\u7559\u4E0B\u6765\u7684\u9898\u76EE"

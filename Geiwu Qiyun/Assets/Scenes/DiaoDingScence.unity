@@ -2133,7 +2133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &548062710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6861,9 +6861,9 @@ MonoBehaviour:
   Scene: DiaoDingScene2
   dialogues:
   - lines:
-    - characterName: "\u5947"
-      dialogueText: "\u6210\u4E86"
-      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - characterName: ' '
+      dialogueText: ' '
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
   nameText: {fileID: 997716714}
   dialogueText: {fileID: 730290337}
   characterSpriteImage: {fileID: 837100475}
@@ -8006,6 +8006,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029243145192037978, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535992225758731924, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5996346215728462022, guid: b8d6b1249a5e69140958c56d03e380d2, type: 3}
