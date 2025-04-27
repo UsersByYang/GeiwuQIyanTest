@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 670e1c61a3bffb845beb555a6a6c87ca
+guid: a207cea73bef72647a831cad9fbb1bac
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u6536\u96C6\u7269\u54C1_0"
+      name: "\u6536\u96C6\u7269\u54C1 1_0"
       rect:
         serializedVersion: 2
-        x: 39
-        y: 68
-        width: 177
-        height: 120
+        x: 0
+        y: 0
+        width: 765
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,50 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361b6ca6a80b32d4db8211c763b3fd76
-      internalID: -2074755918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u6536\u96C6\u7269\u54C1_1"
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 35
-        width: 180
-        height: 186
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6306e97ede25ef4b9cafd7617bb32eb
-      internalID: -1696774049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u6536\u96C6\u7269\u54C1_2"
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 45
-        width: 123
-        height: 174
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a9925c1d388a6146b81ebfa41d2245c
-      internalID: -1498534202
+      spriteID: 487530f57057e874c97419ab5831c3d5
+      internalID: -921924982
       vertices: []
       indices: 
       edges: []
@@ -183,9 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u6536\u96C6\u7269\u54C1_0": -2074755918
-      "\u6536\u96C6\u7269\u54C1_1": -1696774049
-      "\u6536\u96C6\u7269\u54C1_2": -1498534202
+      "\u6536\u96C6\u7269\u54C1 1_0": -921924982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -24,7 +24,7 @@ public class PuzzleManager : MonoBehaviour
         CreatePuzzle();
     }
 
-    void CreatePuzzle()
+    public virtual void CreatePuzzle()
     {
         int pieceWidth = originalImage.width / columns;
         int pieceHeight = originalImage.height / rows;
@@ -64,7 +64,7 @@ public class PuzzleManager : MonoBehaviour
     //         targetPos.y + posindexY * (pieceHeight / rows), 0);
     // }
 
-    void RecordRightPos(int posindexX, int posindexY)
+    public virtual void RecordRightPos(int posindexX, int posindexY)
     {
         //RectTransform rectTransform = targetImage.GetComponent<RectTransform>();
         // float pieceWidth = rectTransform.rect.width / columns;

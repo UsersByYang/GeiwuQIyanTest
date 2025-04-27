@@ -67,7 +67,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     private bool IsInCorrectPosition()
     {
         //正确位置和当前位置的差值
-        bool isMatch = Mathf.Abs(rectTransform.anchoredPosition.x - puzzleManager.GetCorrectPosition(x_index, y_index).x) < 100f&& Mathf.Abs(rectTransform.anchoredPosition.y - puzzleManager.GetCorrectPosition(x_index, y_index).y) < 100f;
+        bool isMatch = Mathf.Abs(rectTransform.anchoredPosition.x - puzzleManager.GetCorrectPosition(x_index, y_index).x) < 20f&& Mathf.Abs(rectTransform.anchoredPosition.y - puzzleManager.GetCorrectPosition(x_index, y_index).y) < 20f;
         return isMatch;
     }
 }
