@@ -511,7 +511,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: "\u201C\u683C\u609F\u201D\u8005"
+      dialogueText: "\u201C\u683C\u7269\u201D\u8005"
       characterSprite: {fileID: 0}
     - characterName: 
       dialogueText: "\u4EE5\u201C\u6C42\u6545\u201C\u660E\u6CD5\u201D\u800C\u7A76\u4E8B\u7269\u4E4B\u672C\u8D28"

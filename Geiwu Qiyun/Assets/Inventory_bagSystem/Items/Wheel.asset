@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wheel
   m_EditorClassIdentifier: 
   itemName: "\u8F6E\u5B50"
-  itemImage: {fileID: -201131959, guid: 9fa42a03df0976846867e6d45350bc98, type: 3}
-  itemHeld: 1
+  itemImage: {fileID: 644970476, guid: 816373c012fa765429dca9dac80f444c, type: 3}
+  itemHeld: 4
   itemInfo: "this is a \u8F6E\u5B50"
   equip: 1
