@@ -5788,7 +5788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ff5cdd6b36ae24281f0f0ca4b916bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: "Y\u7ED3\u675F\u573A\u666F"
+  targetSceneName: End
   delayBeforeTransition: 7
   fadeDuration: 2
   fadeImage: {fileID: 1183094789}

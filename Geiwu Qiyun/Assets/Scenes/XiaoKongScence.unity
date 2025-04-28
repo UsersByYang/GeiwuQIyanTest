@@ -8844,7 +8844,7 @@ MonoBehaviour:
   useClick: 0
   useCollision: 1
   goToNextScene: 1
-  nextSceneName: "Y\u7ED3\u675F\u573A\u666F"
+  nextSceneName: 
   popup: {fileID: 0}
   fadeandloadscene2: {fileID: 969558525}
 --- !u!65 &1879039558
@@ -9118,7 +9118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1946608460
 MonoBehaviour:
   m_ObjectHideFlags: 0

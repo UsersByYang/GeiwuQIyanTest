@@ -59,4 +59,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final3.unity
     guid: 91322bece0878194e937dee03ad28196
+  - enabled: 1
+    path: Assets/Scenes/XiaoKongScence2.unity
+    guid: 74da4ceeab4ada344b41a31155beb582
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 96f4b17723117164ebcedc559b898e04
+  - enabled: 1
+    path: Assets/Scenes/StartAgian.unity
+    guid: e10712a6d08c75c48ac3a1b927f73b45
   m_configObjects: {}

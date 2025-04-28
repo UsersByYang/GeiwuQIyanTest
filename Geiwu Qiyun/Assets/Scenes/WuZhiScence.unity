@@ -2804,8 +2804,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 47.371403, y: 24, z: 0.20000003}
-  m_Center: {x: -24.314255, y: 0, z: -0.0000073621954}
+  m_Size: {x: 47.371403, y: 24, z: 2.1298957}
+  m_Center: {x: -24.314255, y: 0, z: 0.9649403}
 --- !u!212 &1008711313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4226,7 +4226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1717288933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4699,6 +4699,14 @@ PrefabInstance:
       propertyPath: interactionAndCommunite
       value: 
       objectReference: {fileID: 1815056912}
+    - target: {fileID: 963472269317632882, guid: 5fd7d6940b0a64044b454e9e6af5e35b, type: 3}
+      propertyPath: m_Size.z
+      value: 1.6341525
+      objectReference: {fileID: 0}
+    - target: {fileID: 963472269317632882, guid: 5fd7d6940b0a64044b454e9e6af5e35b, type: 3}
+      propertyPath: m_Center.z
+      value: -0.71707624
+      objectReference: {fileID: 0}
     - target: {fileID: 1796934349509906397, guid: 5fd7d6940b0a64044b454e9e6af5e35b, type: 3}
       propertyPath: m_Name
       value: "\u573A\u666F\u642D\u5EFA"
