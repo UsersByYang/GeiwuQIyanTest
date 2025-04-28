@@ -6657,7 +6657,7 @@ PrefabInstance:
     - target: {fileID: 5363281685317771263, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
       propertyPath: myBag
       value: 
-      objectReference: {fileID: 11400000, guid: 69630074fe722d44d87d41f1bf6979d6, type: 2}
+      objectReference: {fileID: 11400000, guid: 68cf4cdace056f64baa3d099b57b50b7, type: 2}
     - target: {fileID: 8452428600220564055, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
       propertyPath: m_Name
       value: Canvas_bagSystem

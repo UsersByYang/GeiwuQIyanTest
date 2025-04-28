@@ -17,9 +17,20 @@ public class ItemOnWorld : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            AddNewItem();
+            
+                // 确保Instance不为null
+                if (MapItemManager.Instance != null)
+                {
+                    MapItemManager.Instance.RemoveItem(this);
+                }
+                else
+                {
+                    Debug.LogError("MapItemManager.Instance is null!");
+                }
 
-            MapItemManager.Instance.RemoveItem(this);//
+                AddNewItem();
+
+           // MapItemManager.Instance.RemoveItem(this);//
 
             Destroy(gameObject);
             isItemPicked = true;
