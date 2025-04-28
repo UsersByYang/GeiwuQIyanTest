@@ -511,10 +511,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: "\u201D\u683C\u7269\u201C\u8005"
+      dialogueText: "\u201C\u683C\u609F\u201D\u8005"
       characterSprite: {fileID: 0}
     - characterName: 
-      dialogueText: "\u4EE5\u201C\u6C42\u6545\u201C\u660E\u6CD5\u201D\u800C\u7A76\u4E8B\u7269\u4E4B\u672C\u8D28."
+      dialogueText: "\u4EE5\u201C\u6C42\u6545\u201C\u660E\u6CD5\u201D\u800C\u7A76\u4E8B\u7269\u4E4B\u672C\u8D28"
       characterSprite: {fileID: 0}
     - characterName: 
       dialogueText: "\u89C4\u5F8B\u4E0E\u9053\u7406\u4E4B\u6CD5\u53CA\u6001\u5EA6\u4E5F"
@@ -541,9 +541,6 @@ MonoBehaviour:
       dialogueText: "\u63A2\u4E8B\u7269\u4E4B\u672C\u8D28"
       characterSprite: {fileID: 0}
     - characterName: 
-      dialogueText: "\u4E8E\u65E0\u5C3D\u5965\u79D8\u4E2D\u6398\u771F\u7406\u4E4B\u5B9D\u85CF"
-      characterSprite: {fileID: 0}
-    - characterName: "\u683C\u7269\u4E4B\u957F\u68A6,\u59CB\u7109"
       dialogueText: "\u4E8E\u65E0\u5C3D\u5965\u79D8\u4E2D\u6398\u771F\u7406\u4E4B\u5B9D\u85CF"
       characterSprite: {fileID: 0}
   nameText: {fileID: 1089560087}

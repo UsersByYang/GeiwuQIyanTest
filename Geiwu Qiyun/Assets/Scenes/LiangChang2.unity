@@ -10883,28 +10883,28 @@ MonoBehaviour:
       dialogueText: "\"\u8001\u9F20\"\u4EA4\u51FA\u4E86"
       characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u8001\u4EBA"
-      dialogueText: "\u8C22\u8C22\u4F60,\u5E74\u8F7B\u4EBA"
+      dialogueText: "\u8C22\u6C5D,\u5C11\u5E74\u90CE"
       characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
     - characterName: "\u8001\u4EBA"
-      dialogueText: "\u6211\u6CA1\u6709\u4EC0\u4E48\u4E1C\u897F\u80FD\u591F\u62A5\u7B54\u4F60"
+      dialogueText: "\u543E\u65E0\u7269\u4EE5\u62A5\u6C5D"
       characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
     - characterName: "\u8001\u4EBA"
-      dialogueText: "\u4E0D\u8FC7\u8BF7\u6536\u4E0B\u8FD9\u4E2A\u5427"
+      dialogueText: "\u7136\u8BF7\u53D7\u6B64"
       characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
     - characterName: "\u5947"
       dialogueText: "\u8FD9\u662F?"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u8001\u4EBA"
-      dialogueText: "\u4E5F\u662F\u4E00\u4E2A\u542C\u7FC1"
+      dialogueText: "\u6B64\u4EA6\u4E00\u201C\u542C\u74EE\u201D"
       characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
     - characterName: "\u8001\u4EBA"
-      dialogueText: "\u9001\u4F60\u4E00\u4E2A\u5427"
+      dialogueText: "\u8D60\u6C5D\u5176\u4E00"
       characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
     - characterName: "\u5947"
       dialogueText: ......
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: 
-      dialogueText: "\"\u53D1\u5149\u7684\u542C\u74EE\"\uFF0C\u5165\u624B\u4E86"
+      dialogueText: "\"\u53D1\u5149\u7684\u542C\u74EE\",\u5165\u624B\u4E86"
       characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
   nameText: {fileID: 1717145553}
   dialogueText: {fileID: 2146769289}
@@ -13648,8 +13648,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.4169161}
+  m_Center: {x: 0, y: 0, z: -0.20845789}
 --- !u!4 &1852284451
 Transform:
   m_ObjectHideFlags: 0

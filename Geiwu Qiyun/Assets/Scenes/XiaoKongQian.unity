@@ -3694,6 +3694,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1227874213809320697, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 1227874213809320697, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2102261087315572708, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3777,6 +3785,22 @@ PrefabInstance:
     - target: {fileID: 3087148510577833717, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Name
       value: "\u8BBE\u7F6Eui55"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942018918448050693, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 4942018918448050693, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7558685127996516447, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 7558685127996516447, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4419,19 +4443,19 @@ MonoBehaviour:
       dialogueText: "\u5C3D\u663E\u201C\u8282\u7528\u201D\u201C\u5C1A\u5DE7\u201D\u4E4B\u667A\u6167"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
-      dialogueText: "\u552F\u4EE5\u5E38\u89C1\u4E4B\u9676\u74EE\u3001\u76AE\u9769\uFF0C\u914D\u4E4B\u4EE5\u4E95\u7A74"
+      dialogueText: "\u552F\u4EE5\u5E38\u89C1\u4E4B\u9676\u74EE,\u76AE\u9769,\u914D\u4E4B\u4EE5\u4E95\u7A74"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
       dialogueText: "\u5373\u6784\u4E3A\u53EF\u63A2\u6570\u5341\u7C73\u5916\u6316\u6398\u4E4B\u58F0\u4E4B\u88C5\u7F6E"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
-      dialogueText: "\u4EE5\u4F4E\u6210\u672C\u81F4\u9AD8\u6548\u80FD\u4E4B\u76EE\u6807\uFF0C\u5F70\u201C\u4E8B\u534A\u529F\u500D\u201D\u4E4B\u5999"
+      dialogueText: "\u4EE5\u4F4E\u6210\u672C\u81F4\u9AD8\u6548\u80FD\u4E4B\u76EE\u6807,\u5F70\u201C\u4E8B\u534A\u529F\u500D\u201D\u4E4B\u5999"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
-      dialogueText: "\u4E14\u65E9\u609F\u632F\u52A8\u53D1\u58F0\u4E4B\u672C\u8D28\uFF0C\u65E2\u73B0\u5BF9\u58F0\u97F3\u4F20\u64AD\u4ECB\u8D28\u7279\u6027\u4E4B\u76F4\u89C2\u8BA4\u77E5"
+      dialogueText: "\u4E14\u65E9\u609F\u632F\u52A8\u53D1\u58F0\u4E4B\u672C\u8D28,\u65E2\u73B0\u5BF9\u58F0\u97F3\u4F20\u64AD\u4ECB\u8D28\u7279\u6027\u4E4B\u76F4\u89C2\u8BA4\u77E5"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
-      dialogueText: "\u4EA6\u4E3A\u201C\u5584\u5047\u4E8E\u7269\u201D\u800C\u4E3B\u52A8\u7528\u81EA\u7136\u89C4\u5F8B\u4E4B\u751F\u52A8\u8DF5\u884C."
+      dialogueText: "\u4EA6\u4E3A\u201C\u5584\u5047\u4E8E\u7269\u201D\u800C\u4E3B\u52A8\u7528\u81EA\u7136\u89C4\u5F8B\u4E4B\u751F\u52A8\u8DF5\u884C"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u5947"
       dialogueText: "\u771F\u662F\u4E00\u9879\u5353\u8D8A\u7684\u58F0\u5B66\u6280\u672F\u6210\u679C"

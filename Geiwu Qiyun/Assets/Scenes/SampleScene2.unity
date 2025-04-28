@@ -5064,7 +5064,7 @@ MonoBehaviour:
       dialogueText: "\u81EA\u7406\u8BBA\u63A8\u5BFC\u81F3\u4E8E\u5668\u5177\u6210\u578B"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
-      dialogueText: "\u5C3D\u663E\u201C\u7406\u8BBA\u5BFC\u5B9E\u8DF5\uFF0C\u5B9E\u8DF5\u8BC1\u7406\u8BBA\u201D\u4E4B\u5B8C\u6574\u79D1\u5B66\u63A2\u7D22\u8DEF\u5F84"
+      dialogueText: "\u5C3D\u663E\u201C\u7406\u8BBA\u5BFC\u5B9E\u8DF5,\u5B9E\u8DF5\u8BC1\u7406\u8BBA\u201D\u4E4B\u5B8C\u6574\u79D1\u5B66\u63A2\u7D22\u8DEF\u5F84"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u683C\u609F"
       dialogueText: "\u7EDD\u975E\u4EC5\u4E3A\u7ECF\u9A8C\u4E4B\u5806\u780C"
@@ -5086,9 +5086,6 @@ MonoBehaviour:
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u5947"
       dialogueText: "\"\u5DEE\u4E4B\u6BEB\u5398,\u8C2C\u4EE5\u5343\u91CC\""
-      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
-    - characterName: "\u5947"
-      dialogueText: "\u4E0E\"\u975E\u547D\",\u9AD8\u5EA6\u5951\u5408"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u683C\u609F"
       dialogueText: "\u5982\u6240\u8A00\u6781\u662F"

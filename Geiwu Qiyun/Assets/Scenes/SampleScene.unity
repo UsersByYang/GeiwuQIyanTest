@@ -20028,6 +20028,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1227874213809320697, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 1227874213809320697, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2102261087315572708, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -20111,6 +20119,22 @@ PrefabInstance:
     - target: {fileID: 3087148510577833717, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Name
       value: "\u8BBE\u7F6Eui55"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942018918448050693, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 4942018918448050693, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7558685127996516447, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 7558685127996516447, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52717,7 +52741,7 @@ MonoBehaviour:
       dialogueText: ......
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: ???
-      dialogueText: "\u5FEB\u9192\u9192,\u5E74\u8F7B\u4EBA."
+      dialogueText: "\u5FEB\u9192\u9192,\u5C11\u5E74\u90CE"
       characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u5947"
       dialogueText: '!!!!!'
@@ -52734,64 +52758,61 @@ MonoBehaviour:
     - characterName: ???
       dialogueText: "\u5C11\u5E74\u90CE,"
       characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
-      dialogueText: "\u543E\u4E43\u683C\u7269\u4E4B\u9B42\u4E5F."
+    - characterName: "\u683C\u609F"
+      dialogueText: "\u543E\u4E43\u201C\u683C\u609F\u201D\u4E5F."
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u543E\u9080\u6C5D\u81F3\u4E66\u4E2D\u4E7E\u5764,"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u6B32\u8003\u6821\u4E8E\u6C5D."
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u4F46\u4F7F\u6C5D\u89E3\u4E09\u9053\u8C1C\u9898,"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u4FBF\u53EF\u5F52\u8FD4."
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u5947"
-      dialogueText: "\u683C\u7269\u4E4B\u9B42?"
+      dialogueText: "\u201C\u683C\u609F\u201D?"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
-    - characterName: "\u5947"
-      dialogueText: "\u4F60\u662F\u8C01?"
-      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u543E\u4E43\u534E\u590F\u53E4\u4E4B\u8BF8\u8D24\u79D1\u5B66\u5BB6\u667A\u6167\u51DD\u5408\u800C\u6210\u4E4B\u7075\u8BC6,"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u4E8E\u6B64\u4E66\u4E2D\u77E5\u8BC6\u5DF2\u5B88\u62A4\u826F\u4E45."
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u6C5D\u53EF\u5E94\u5141\u53D7\u543E\u4E4B\u8003\u8F83?"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u5947"
-      dialogueText: "\u597D"
+      dialogueText: "\u597D......"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u5947"
       dialogueText: "\u6211\u7B54\u5E94\u4F60."
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
-      dialogueText: "\u54C8\u54C8\u54C8\u54C8\uFF0C\u5C11\u5E74\u90CE"
+    - characterName: "\u683C\u609F"
+      dialogueText: "\u54C8\u54C8\u54C8\u54C8,\u5C11\u5E74\u90CE"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u6C5D\u5F53\u7528\u5FC3\u4E3A\u4E4B!"
       characterSprite: {fileID: 1664443308, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u543E\u751A\u770B\u597D\u6C5D......"
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: "\u5947"
       dialogueText: ......
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u5947"
-      dialogueText: "\u6240\u4EE5\u8BF4"
+      dialogueText: "\u201C\u683C\u609F\u201D"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
     - characterName: "\u5947"
-      dialogueText: "\u4F60\u662F\u5E7D\u7075\u5417"
+      dialogueText: "\u4E43\u201C\u5E7D\u7075\u201D?"
       characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: ......
       characterSprite: {fileID: 398752411, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
-    - characterName: "\u683C\u7269\u4E4B\u9B42"
+    - characterName: "\u683C\u609F"
       dialogueText: "\u6C5D\u52FF\u9700\u7BA1\u4E4B"
       characterSprite: {fileID: -49614108, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
   nameText: {fileID: 1350826036}
@@ -54454,7 +54475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2021204882
 RectTransform:
   m_ObjectHideFlags: 0

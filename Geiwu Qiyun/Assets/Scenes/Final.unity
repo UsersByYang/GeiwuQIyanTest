@@ -1464,7 +1464,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: "\u5BF9\u8BDD\u6D4B\u8BD5"
+      dialogueText: "\u7F6E\u4E09\u6837\u4E4B\u7269\u4E8E\u5176\u4E0A"
+      characterSprite: {fileID: 0}
+    - characterName: 
+      dialogueText: "\u5219\u53EF\u542F\u201C\u5927\u95E8\u201D"
       characterSprite: {fileID: 0}
   nameText: {fileID: 1327114846}
   dialogueText: {fileID: 1360677777}

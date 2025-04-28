@@ -3442,7 +3442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &609633624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7217,10 +7217,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: "\u201C\u666F\u5230,\u5728\u5348\u6709\u7AEF,\u4E0E\u666F\u957F,\u8BF4\u5728\u7AEF.\u201D"
+      dialogueText: ???
       characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
     - characterName: 
-      dialogueText: "\u5C0F\u5B54\u6240\u6210\u7684\u50CF\u4E4B\u6240\u4EE5\u5012\u7ACB,\u662F\u56E0\u4E3A\u5149\u7EBF\u4ECE\u9488\u5B54\u4EA4\u53C9\u901A\u8FC7"
+      dialogueText: "\u4ECE\u5012\u5F71\u540E\u9762\u6D6E\u73B0\u51FA\u4E00\u4E2A\u4E1C\u897F"
       characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
   nameText: {fileID: 402042308}
   dialogueText: {fileID: 2121523771}
@@ -7836,7 +7836,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - characterName: 
-      dialogueText: 666
+      dialogueText: "\u9274\u6D3C,\u666F\u4E00\u5C0F\u800C\u6613,\u4E00\u5927\u800C\u6B63"
       characterSprite: {fileID: 0}
   nameText: {fileID: 1074993289}
   dialogueText: {fileID: 1159399364}
@@ -8802,6 +8802,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1227874213809320697, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 1227874213809320697, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2102261087315572708, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8885,6 +8893,22 @@ PrefabInstance:
     - target: {fileID: 3087148510577833717, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
       propertyPath: m_Name
       value: "\u8BBE\u7F6Eui55"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942018918448050693, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 4942018918448050693, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7558685127996516447, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b31e755d5c6e2034687ebf02d0625633, type: 2}
+    - target: {fileID: 7558685127996516447, guid: ead69c3c4ac705549a3cf209cf65a4b1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

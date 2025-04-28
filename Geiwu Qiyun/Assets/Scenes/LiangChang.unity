@@ -9953,6 +9953,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8675365533277996015, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 186400399}
+    - targetCorrespondingSourceObject: {fileID: 8675365533277996015, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1224634083}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994bb320d55a27c43809524dc6f4b15b, type: 3}
 --- !u!1 &667482776
@@ -11146,7 +11149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23beba9320e6812429ac15026979f0fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1224634081}
   sceneToLoad: LiangChang2
 --- !u!4 &742058124
 Transform:
@@ -14267,6 +14270,81 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1224634080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224634083}
+  - component: {fileID: 1224634082}
+  - component: {fileID: 1224634081}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1224634081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224634080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1224634082
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224634080}
+  m_CullTransparentMesh: 1
+--- !u!224 &1224634083
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224634080}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 46038337}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1236139976
 GameObject:
   m_ObjectHideFlags: 0
@@ -16453,8 +16531,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - lines:
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u5C11\u5E74\u90CE,\u6C5D\u80FD\u52A9\u543E\u4E00\u81C2\u4E4B\u529B\u4E4E?"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u543E\u4E4B\u7CAE\u4ED3,\u9F20\u60A3\u6F5C\u5165"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u543E\u672C\u6B32\u4EE5\u6B64\u7269\u4FA6\u542C\u9F20\u4E4B\u52A8\u9759,\u5948\u4F55\u543E\u8033\u5DF2\u8069,\u624B\u811A\u4EA6\u4E0D\u7075\u4FBF"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u6C5D\u53EF\u76F8\u52A9\u5426"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u5947"
+      dialogueText: "\u6CA1\u95EE\u9898\u7684,\u4EA4\u7ED9\u6211\u5427"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u543E\u751A\u611F\u541B\u6069"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u4E14\u643A\u6B64\u7269"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
     - characterName: 
-      dialogueText: "\u5BF9\u8BDD\u6D4B\u8BD5"
+      dialogueText: "\u63A8\u52A8\"\u542C\u74EE\"\u81F3\u7CAE\u4ED3\u9644\u8FD1\u53EF\u76D1\u542C\u8001\u9F20\u7684\u58F0\u54CD"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+    - characterName: 
+      dialogueText: "\u76D1\u542C\u5230\u6709\u8001\u9F20\u5B58\u5728\u540E\u5230\u7CAE\u4ED3\u540E\u6293\u53D6\u5373\u53EF"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+    - characterName: 
+      dialogueText: "\u8001\u9F20\u603B\u5171\u6709\u4E09\u53EA"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+    - characterName: 
+      dialogueText: "\u53BB\u5427\u5C11\u5E74"
+      characterSprite: {fileID: -1634839972, guid: c28f1b1cd6a084845a3e7bad394096a8, type: 3}
+  - lines:
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u5C11\u5E74\uFF0C\u6C5D\u80FD\u52A9\u543E\u4E00\u81C2\u4E4B\u529B\u4E4E\uFF1F"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u543E\u4E4B\u7CAE\u4ED3\uFF0C\u9F20\u60A3\u6F5C\u5165"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u543E\u672C\u6B32\u4EE5\u6B64\u7269\u4FA6\u542C\u9F20\u4E4B\u52A8\u9759\uFF0C\u5948\u4F55\u543E\u8033\u5DF2\u8069\uFF0C\u624B\u811A\u4EA6\u4E0D\u7075\u4FBF"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u6C5D\u53EF\u76F8\u52A9\u5426"
+      characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
+    - characterName: "\u5947"
+      dialogueText: "\u6CA1\u95EE\u9898\u7684,\u4EA4\u7ED9\u6211\u5427"
+      characterSprite: {fileID: 504537522, guid: 68bc95a3ff41c8949b970d6ad206cad5, type: 3}
+    - characterName: "\u8001\u4EBA"
+      dialogueText: "\u543E\u751A\u611F\u541B\u6069"
       characterSprite: {fileID: 21300000, guid: 1857144999bce0f49bb068f55d00c6e9, type: 3}
   nameText: {fileID: 1717145553}
   dialogueText: {fileID: 2146769289}
@@ -16604,7 +16731,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518730234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6cc1e9101400104a8a056bf7c045308, type: 3}
   m_Name: 
@@ -19869,6 +19996,7 @@ GameObject:
   - component: {fileID: 1787148549}
   - component: {fileID: 1787148551}
   - component: {fileID: 1787148550}
+  - component: {fileID: 1787148552}
   m_Layer: 0
   m_Name: Oldman (2)
   m_TagString: Untagged
@@ -19964,6 +20092,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1787148552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787148548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1300680c4468bac43a98b36d2fa3df54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useClick: 0
+  useCollision: 1
+  goToNextScene: 1
+  nextSceneName: WuZhiScence
+  popup: {fileID: 0}
+  fadeandloadscene2: {fileID: 742058123}
 --- !u!1 &1792326945
 GameObject:
   m_ObjectHideFlags: 0
